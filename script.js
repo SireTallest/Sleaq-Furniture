@@ -5,7 +5,7 @@ setInterval(() => {
   slides[current].classList.remove('active');   // hide current slide
   current = (current + 1) % slides.length;      // move index forward, loop back at end
   slides[current].classList.add('active');       // show next slide
-}, 5000); // every 4 seconds
+}, 5000); // every 5 seconds
 
 const lightbox = GLightbox({
   touchNavigation: true,   // swipe on mobile
