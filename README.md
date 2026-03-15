@@ -4,7 +4,7 @@
 Sleaq is a modern, responsive web application designed to showcase exquisite furniture craftsmanship. It features an engaging hero section with a dynamic slider, an interactive gallery of furniture designs, and a "Load More" functionality to enhance user experience. Built with a focus on elegant design and smooth interaction, Sleaq brings high-quality furniture visuals to life through a seamless user interface.
 
 ## Live Demo
-🔗 [View Live Site](#) *coming soon...*
+🔗 [https://sleaq-furniture.vercel.app/](#) *still some touches going on...*
 
 ## Features
 - **Dynamic Hero Slider**: Engages visitors immediately with a captivating carousel of lifestyle imagery.
