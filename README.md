@@ -98,7 +98,7 @@ This project can be hosted on any static hosting platform:
 ## Developer
 **Oladepo Abdulbaki Opeyemi**
 
-* **LinkedIn** (https://www.linkedin.com/in/abdulbaki-oladepo-4998b6213/)]
+* **LinkedIn** (https://www.linkedin.com/in/abdulbaki-oladepo-4998b6213/)
  [![GitHub](https://img.shields.io/badge/GitHub-SireTallest-181717?style=flat&logo=github)](https://github.com/SireTallest)
  [![Email](https://img.shields.io/badge/Email-abdoladepo@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:abdoladepo@gmail.com)
 
