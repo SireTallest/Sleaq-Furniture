@@ -1,6 +1,6 @@
 /* Base / Reset */
 :root{
-  --brownPrimary:#5C3317;       /* primary dark blue */
+  --brownPrimary:#5C3317;       
   --orangeAccent:#E87722;     /* button */
   --WarmNeutral:#8B5E3C;
   --bg:#FAF7F2;
@@ -336,4 +336,76 @@ nav .nav-btn {
   background: var(--brownPrimary);
   transform: translateY(-2px);
   border: 2px solid var(--orangeAccent);
+}
+
+/* About Section */
+.about {
+  padding: 6rem 5%;
+  background: var(--bg);         /* back to warm off-white */
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* image left, text right */
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-image {
+  border-radius: 12px;
+  overflow: hidden;
+  height: 550px;                 /* tall image feels editorial */
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.03);        /* very subtle zoom on hover */
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.about-text {
+  color: var(--WarmNeutral);
+  font-size: 1rem;
+  line-height: 1.9;              /* generous line height for readability */
+}
+
+.about-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid #E8DDD0;  /* subtle divider line */
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.stat-value {
+  font-family: "Oswald", sans-serif;   /* bold geometric — makes numbers feel strong */
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--orangeAccent);          /* orange numbers pop against the white background */
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--brownPrimary);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  max-width: 120px;                    /* prevents long labels from stretching too wide */
 }
