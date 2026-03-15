@@ -20,8 +20,8 @@ sleaq/
 ├── style.css           # All styles and animations
 ├── script.js           # Slider, load more, and lightbox logic
 └──📁 asset/
-    ├── 📁 images/         # Logo, hero slides, gallery images
-    └── 📁 videos/         # Gallery video files
+│    ├── 📁 images/         # Logo, hero slides, gallery images
+│    └── 📁 videos/         # Gallery video files
 │
 └── 📄 README.md            # Project documentation
 ```
