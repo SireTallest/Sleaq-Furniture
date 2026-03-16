@@ -47,3 +47,37 @@ loadMoreBtn.addEventListener('click', () => {
   }
 
 });
+
+
+const submitBtn = document.getElementById('submitBtn');
+
+submitBtn.addEventListener('click', () => {
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  // Basic validation
+  if (!name || !phone || !message) {
+    alert('Please fill in your name, phone number and message.');
+    return;
+  }
+
+  // Build the WhatsApp message
+  const whatsappMessage = 
+`Hi Sleaq, coming straight from your website. I am interested in your furniture and would like to talk business...
+
+*Name:* ${name}
+*Email:* ${email || 'Not provided'}
+*Phone:* ${phone}
+
+*Message:*
+${message}`;
+
+  // Open WhatsApp with the message
+  const whatsappURL = `https://wa.me/2349127164329?text=${encodeURIComponent(whatsappMessage)}`;
+  window.open(whatsappURL, '_blank');
+});
+
+// Auto year in footer
+document.getElementById('year').textContent = new Date().getFullYear();
