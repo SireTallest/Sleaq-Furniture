@@ -504,3 +504,269 @@ nav .nav-btn {
   font-size: .8rem;
   color: var(--WarmNeutral);
 }
+
+.google-verify {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .78rem;
+  color: var(--WarmNeutral);
+  text-decoration: none;
+  margin-top: .5rem;
+  transition: color 0.3s ease;
+}
+
+.google-verify:hover {
+  color: var(--orangeAccent);
+}
+
+.google-logo {
+  height: 16px;
+  width: auto;
+}
+.google-verify .verify{
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Contact Section */
+.contact {
+  padding: 6rem 5%;
+  background: var(--bg);
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;  /* form slightly wider than info */
+  gap: 4rem;
+  margin-top: 3rem;
+  align-items: start;
+}
+
+/* ---- Contact Info ---- */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  margin-top: .2rem;
+  flex-shrink: 0;
+}
+
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+.contact-label {
+  font-size: .75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--WarmNeutral);
+}
+
+.contact-value {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--brownPrimary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-value:hover {
+  color: var(--orangeAccent);
+}
+
+.social-links {
+  display: flex;
+  gap: .8rem;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;           /* circle shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-link.twitter {
+  background: #000;
+  color: #ffff;
+}
+.social-link.tiktok {
+  background: #000;
+  color:#ffff;
+}
+
+.social-link.youtube {
+  background: #ff0000;   /* red tint for YouTube */
+  color: #ffff;
+}
+
+.social-link.twitter:hover,
+.social-link.tiktok:hover,
+.social-link.youtube:hover {
+  /* background: var(--orangeAccent);
+  color: #fff; */
+  transform: translateY(-3px);
+}
+
+
+
+.social-link.tiktok:hover {
+  /* background: #000;
+  color: #fff; */
+  /* transform: translateY(-3px); */
+}
+
+.social-link.youtube:hover {
+  /* background: #FF0000;
+  color: #fff; */
+  /* transform: translateY(-3px); */
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  background: #25D366;          /* WhatsApp green — universally recognized */
+  color: #fff;
+  padding: .9rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: .5rem;
+  width: fit-content;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+}
+
+/* ---- Email Form ---- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(92, 51, 23, 0.08);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.form-group label {
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--brownPrimary);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: .85rem 1rem;
+  border: 1.5px solid #E8DDD0;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: .95rem;
+  color: var(--TextDark);
+  background: var(--bg);
+  outline: none;
+  transition: border-color 0.3s ease;
+  resize: none;                  /* stops textarea being manually resized */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--orangeAccent);   /* orange border on focus */
+}
+
+.btn-submit {
+  background: var(--orangeAccent);
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background: var(--brownPrimary);
+  border: 2px solid var(--orangeAccent);
+  transform: translateY(-2px);
+}
+
+/* footer */
+.footer {
+  background: var(--brownPrimary);    /* deep brown — #5C3317 */
+  padding: 3rem 5%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.footer-logo {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer-logo-img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);   /* turns logo white against dark background */
+}
+
+.footer-tagline {
+  font-size: .9rem;
+  color: rgba(255, 255, 255, 0.6);   /* dimmed white — subtle */
+  font-style: italic;
+  margin-top: .5rem;
+  letter-spacing: .05em;
+}
+
+.footer-copy {
+  font-size: .8rem;
+  color: white;   /* even more dimmed — least important info */
+  letter-spacing: .05em;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);  /* very subtle divider */
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
