@@ -18,14 +18,14 @@ const loadMoreBtn = document.getElementById('loadMoreBtn');
 const itemsPerLoad = 6;
 let visibleCount = 9;
 
-// Step 1 — hide everything beyond the first 6 on page load
+//  hide everything beyond the first 6 on page load
 galleryItems.forEach((item, index) => {
   if (index >= visibleCount) {
     item.classList.add('hidden');
   }
 });
 
-// Step 2 — on button click, reveal the next batch
+//  on button click, reveal the next batch
 loadMoreBtn.addEventListener('click', () => {
   
   // how many items to show now
@@ -41,7 +41,7 @@ loadMoreBtn.addEventListener('click', () => {
   // update the count
   visibleCount = newVisible;
 
-  // Step 3 — hide button when all items are visible
+  // hide button when all items are visible
   if (visibleCount >= galleryItems.length) {
     loadMoreBtn.style.display = 'none';
   }
@@ -82,29 +82,17 @@ document.getElementById('year').textContent = new Date().getFullYear();
 // Mobile menu
 const hamburger = document.getElementById('hamburger');
 const navList = document.getElementById('navList');
-const navOverlay = document.getElementById('navOverlay');
-
-function openMenu() {
-  hamburger.classList.add('active');
-  navList.classList.add('open');
-  navOverlay.classList.add('active');
-}
-
-function closeMenu() {
-  hamburger.classList.remove('active');
-  navList.classList.remove('open');
-  navOverlay.classList.remove('active');
-}
 
 hamburger.addEventListener('click', () => {
-  navList.classList.contains('open') ? closeMenu() : openMenu();
+  hamburger.classList.toggle('active');
+  navList.classList.toggle('open');
 });
 
 document.querySelectorAll('.nav-list a').forEach(link => {
   link.addEventListener('click', () => {
-    closeMenu();    // just close the menu — let the browser handle the scroll natively
+    hamburger.classList.remove('active');
+    navList.classList.remove('open');
   });
 });
-
 // Close when overlay clicked
 navOverlay.addEventListener('click', closeMenu);
