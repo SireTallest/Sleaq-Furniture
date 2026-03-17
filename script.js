@@ -64,7 +64,7 @@ submitBtn.addEventListener('click', () => {
   }
 
   const whatsappMessage =
-`Hi Sleaq, coming straight from your website. I am interested in your furniture and would like to talk business...
+`Hi Sleaq, coming straight from your website. I am interested in your furniture and would like to discuss business...
 
 *Name:* ${name}
 *Email:* ${email || 'Not provided'}
