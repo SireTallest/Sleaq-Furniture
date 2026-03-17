@@ -100,9 +100,10 @@ hamburger.addEventListener('click', () => {
   navList.classList.contains('open') ? closeMenu() : openMenu();
 });
 
-// Close when nav link clicked
 document.querySelectorAll('.nav-list a').forEach(link => {
-  link.addEventListener('click', closeMenu);
+  link.addEventListener('click', () => {
+    closeMenu();    // just close the menu — let the browser handle the scroll natively
+  });
 });
 
 // Close when overlay clicked
