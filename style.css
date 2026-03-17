@@ -17,6 +17,7 @@
 
 html, body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .hero,
 .gallery,
@@ -391,7 +392,7 @@ nav .nav-btn {
   gap: 2rem;
   margin-top: 1rem;
   padding-top: 2rem;
-  border-top: 1px solid #E8DDD0;  /* subtle divider line */
+  border-top: 1px solid #E8DDD0;  
   flex-wrap: wrap;
 }
 
@@ -402,10 +403,10 @@ nav .nav-btn {
 }
 
 .stat-value {
-  font-family: "Oswald", sans-serif;   /* bold geometric — makes numbers feel strong */
+  font-family: "Oswald", sans-serif; 
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--orangeAccent);          /* orange numbers pop against the white background */
+  color: var(--orangeAccent);          
   line-height: 1;
 }
 .stat-value i {
@@ -520,7 +521,7 @@ nav .nav-btn {
 }
 
 .google-logo {
-  height: 24px;
+  height: 48px;
   width: auto;
 }
 .google-verify .verify{
@@ -834,7 +835,7 @@ nav .nav-btn {
   }
 
   .about {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
     gap: 2rem;
   }
 
@@ -903,7 +904,7 @@ nav .nav-btn {
 
   /* MOBILE NAV MENU — uses transform not display:none */
   .nav-list {
-    display: flex !important;     /* always flex — never none */
+    display: flex !important;    
     flex-direction: column;
     align-items: center;
     gap: 0;
@@ -912,17 +913,18 @@ nav .nav-btn {
     top: 0;
     right: 0;
     width: 75%;
-    height: 100vh;
+    height: 90vh;
     background: var(--brownPrimary);
+    border-radius: 16px;
     padding: 100px 2rem 2rem;
     z-index: 150;
     margin-left: 0;
-    transform: translateX(100%);  /* hidden off screen */
+    transform: translateX(100%);  
     transition: transform 0.4s ease;
   }
 
   .nav-list.open {
-    transform: translateX(0);     /* slides in */
+    transform: translateX(0);    
   }
 
   .nav-list li {
@@ -957,7 +959,7 @@ nav .nav-btn {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
     z-index: 140;
   }
 
@@ -993,18 +995,20 @@ nav .nav-btn {
 
   /* GALLERY */
   .gallery-grid {
-    grid-template-columns: 1fr;   /* fixed — was repeat(1fr) which is wrong syntax */
+    grid-template-columns: 1fr;   
     gap: .8rem;
   }
 
   /* ABOUT */
   .about {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
     gap: 2rem;
     padding: 4rem 5%;
   }
 
-  .about-content { order: 1; }   /* text first */
+  .about-content { 
+    order: 1; 
+  }   /* text first */
   .about-image {
     order: 2;                     /* image second */
     height: 280px;
@@ -1035,11 +1039,14 @@ nav .nav-btn {
     width: 100%;
   }
 
-  .jiji-verify {
+  .google-verify .google-logo {
     flex-wrap: wrap;
     font-size: .72rem;
-    width: 100%;
-    margin-top: 1.5rem;
+    width: auto;
+    /* margin-top: rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* CONTACT */
@@ -1069,5 +1076,7 @@ nav .nav-btn {
 
 /* Hide hamburger on desktop */
 @media (min-width: 769px) {
-  .hamburger { display: none; }
+  .hamburger { 
+    display: none; 
+  }
 }
