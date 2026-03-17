@@ -770,3 +770,54 @@ nav .nav-btn {
   text-align: center;
   font-weight: 600;
 }
+
+.footer-dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+.footer-dev-text {
+  font-size: .75rem;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.footer-dev-name {
+  font-size: .9rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: .05em;
+}
+
+.footer-dev-links {
+  display: flex;
+  gap: .8rem;
+  margin-top: .3rem;
+}
+
+.dev-link {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--orangeAccent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  /* background: rgba(255, 255, 255, 0.08); */
+  transition: all 0.3s ease;
+}
+
+.dev-link:hover {
+  color: #fff;
+  background: var(--orangeAccent);
+  transform: translateY(-3px);
+}
