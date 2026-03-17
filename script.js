@@ -2,21 +2,21 @@ const slides = document.querySelectorAll('.hero-slides .slide');
 let current = 0;
 
 setInterval(() => {
-  slides[current].classList.remove('active');   // hide current slide
-  current = (current + 1) % slides.length;      // move index forward, loop back at end
-  slides[current].classList.add('active');       // show next slide
-}, 5000); // every 5 seconds
+  slides[current].classList.remove('active');
+  current = (current + 1) % slides.length;
+  slides[current].classList.add('active');
+}, 5000);
 
 const lightbox = GLightbox({
-  touchNavigation: true,   // swipe on mobile
-  loop: true,              // loops back to first after last
-  autoplayVideos: true     // videos play automatically in lightbox
+  touchNavigation: true,
+  loop: true,
+  autoplayVideos: true
 });
 
 const galleryItems = document.querySelectorAll('.gallery-item');
 const loadMoreBtn = document.getElementById('loadMoreBtn');
-const itemsPerLoad = 6;    // how many to show at a time
-let visibleCount = 9;      // how many are currently visible
+const itemsPerLoad = 6;
+let visibleCount = 9;
 
 // Step 1 — hide everything beyond the first 6 on page load
 galleryItems.forEach((item, index) => {
@@ -63,8 +63,7 @@ submitBtn.addEventListener('click', () => {
     return;
   }
 
-  // Build the WhatsApp message
-  const whatsappMessage = 
+  const whatsappMessage =
 `Hi Sleaq, coming straight from your website. I am interested in your furniture and would like to talk business...
 
 *Name:* ${name}
@@ -74,10 +73,37 @@ submitBtn.addEventListener('click', () => {
 *Message:*
 ${message}`;
 
-  // Open WhatsApp with the message
-  const whatsappURL = `https://wa.me/2349127164329?text=${encodeURIComponent(whatsappMessage)}`;
-  window.open(whatsappURL, '_blank');
+  window.open(`https://wa.me/2349127164329?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
 });
 
 // Auto year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// Mobile menu
+const hamburger = document.getElementById('hamburger');
+const navList = document.getElementById('navList');
+const navOverlay = document.getElementById('navOverlay');
+
+function openMenu() {
+  hamburger.classList.add('active');
+  navList.classList.add('open');
+  navOverlay.classList.add('active');
+}
+
+function closeMenu() {
+  hamburger.classList.remove('active');
+  navList.classList.remove('open');
+  navOverlay.classList.remove('active');
+}
+
+hamburger.addEventListener('click', () => {
+  navList.classList.contains('open') ? closeMenu() : openMenu();
+});
+
+// Close when nav link clicked
+document.querySelectorAll('.nav-list a').forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
+// Close when overlay clicked
+navOverlay.addEventListener('click', closeMenu);
