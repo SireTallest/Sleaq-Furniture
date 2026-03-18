@@ -18,7 +18,7 @@ Sleaq is a modern, responsive web application designed to showcase exquisite fur
 sleaq/
 ├── 📄index.html          # Main HTML file
 ├── style.css           # All styles and animations
-├── script.js           # Slider, load more, and lightbox logic
+├── script.js           # Slider, load more, toggle mobile menu and lightbox logic
 └──📁 asset/
 │    ├── 📁 images/         # Logo, hero slides, gallery images
 │    └── 📁 videos/         # Gallery video files
@@ -56,8 +56,8 @@ Sleaq offers a straightforward and intuitive user experience for exploring furni
 The navigation bar at the top allows you to quickly jump between sections:
 *   **Home**: Returns to the main hero section.
 *   **Gallery**: Displays a collection of our crafted spaces.
-*   **About Us**: (Placeholder - content not provided in current scope but link exists).
-*   **Testimonials**: (Placeholder - content not provided in current scope but link exists).
+*   **About Us**: Takes yu to the about us page were you get to know how sleaq came to existence and the purpose they serve.
+*   **Testimonials**: Directs you to the reviews/testimonials of previous and current customers who are satisfied with the works of sleaq.
 *   **Contact Us**: Directs you to the contact section to get in touch.
 
 ### Exploring the Gallery
