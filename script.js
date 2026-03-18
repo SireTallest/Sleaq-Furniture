@@ -94,5 +94,5 @@ document.querySelectorAll('.nav-list a').forEach(link => {
     navList.classList.remove('open');
   });
 });
-// Close when overlay clicked
-navOverlay.addEventListener('click', closeMenu);
+// // Close when overlay clicked
+// navOverlay.addEventListener('click', closeMenu);
