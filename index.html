@@ -16,28 +16,28 @@
     <meta property="og:url" content="https://www.sleaqfurniture.com">
     <meta property="og:title" content="Sleaq Furniture — Crafting Spaces, Creating Memories">
     <meta property="og:description" content="Premium handcrafted furniture built in Lagos, trusted across Nigeria and beyond. Living room, bedroom and office furniture — 100% custom built.">
-    <meta property="og:image" content="https://www.sleaqfurniture.com/asset/images/sleaq.jpeg">
+    <meta property="og:image" content="https://www.sleaqfurniture.com/asset/images/sleaq.webp">
 
     <!-- Twitter Card — controls how the site looks when shared on Twitter/X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://www.sleaqfurniture.com">
     <meta name="twitter:title" content="Sleaq Furniture — Crafting Spaces, Creating Memories">
     <meta name="twitter:description" content="Premium handcrafted furniture built in Lagos, trusted across Nigeria and beyond. Living room, bedroom and office furniture — 100% custom built.">
-    <meta name="twitter:image" content="https://www.sleaqfurniture.com/asset/images/sleaq.jpeg">
+    <meta name="twitter:image" content="https://www.sleaqfurniture.com/asset/images/sleaq.webp">
 
     <!-- Canonical URL — tells Google this is the main version of the page -->
     <link rel="canonical" href="https://www.sleaqfurniture.com">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="asset/images/sleaq.jpeg">
+    <link rel="icon" type="image/png" href="asset/images/sleaq.webp">
     <title>Sleaq Furniture — Crafting Spaces, Creating Memories</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Dancing+Script:wght@700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="asset/images/sleaq.jpeg">
+    <link rel="icon" type="image/png" href="asset/images/sleaq.webp">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" media="print" onload="this.media='all' " />
 
 </head>
 <body>
@@ -46,7 +46,7 @@
         <nav class="navbar" id="mainNav">
 
             <a class="logo" href="#home">
-                <img src="asset/images/sleaq-removebg-preview.png" alt="Sleaq Furniture Logo" class="logo-img" />
+                <img src="asset/images/sleaq-removebg-preview.webp" alt="Sleaq Furniture Logo" class="logo-img" />
             </a>
 
             <ul class="nav-list" id="navList">
@@ -74,13 +74,21 @@
         <section class="hero" id="home">
             
             <div class="hero-slides">
-                <div class="slide active" style="background-image: url('asset/images/hero-bg.webp')"></div>
+
+                <div class="slide active">
+                    <img 
+                    src= "asset/images/hero-bg.webp" 
+                    alt="Sleaq Furniture" 
+                    fetchpriority="high"
+                    class="slide-img"/>
+                </div>
                 <div class="slide" style="background-image: url('asset/images/tvConsole.webp')"></div>
                 <div class="slide" style="background-image: url('asset/images/hero-bg2.webp')"></div>
                 <div class="slide" style="background-image: url('asset/images/Kitchen.webp')"></div>
                 <div class="slide" style="background-image: url('asset/images/hero-bg3.webp')"></div>
+            
             </div>
-           
+
             <div class="hero-overlay"></div>
 
             <div class="hero-content">
@@ -121,7 +129,15 @@
                 <div class="gallery-item">
 
                     <a href="asset/images/Aesthetics.webp" class="glightbox">
-                        <img src="asset/images/Aesthetics.webp" loading="lazy" alt="Living room furniture" />
+                        <img 
+                        src="asset/images/Aesthetics.webp" 
+                        srcset = "
+                        asset/images/Aesthetics-small.webp 624w,
+                        asset/images/Aesthetics.webp 1440w
+                        "
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        loading="lazy" 
+                        alt="Living room furniture" />
                     </a>
 
                 </div>
@@ -129,7 +145,12 @@
                 <div class="gallery-item">
 
                     <a href="asset/videos/TvConsole.mp4" class="glightbox" data-type="video">
-                        <video src="asset/videos/TvConsole.mp4" muted autoplay loop playsinline preload="none"></video>
+                        <video 
+                            src="asset/videos/TvConsole.mp4" 
+                            muted loop playsinline preload="none" 
+                            onmouseenter="this.play()" 
+                            onmouseleave="this.pause()">
+                        </video>
                     </a>
 
                 </div>
@@ -137,7 +158,15 @@
                 <div class="gallery-item">
 
                     <a href="asset/images/consoleLight.webp" class="glightbox">
-                        <img src="asset/images/consoleLight.webp" loading="lazy" alt="Bedroom furniture" />
+                        <img 
+                        src="asset/images/consoleLight.webp" 
+                        srcset = "
+                        asset/images/consoleLight-small.webp 624w,
+                        asset/images/consoleLight.webp 1440w
+                        "
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        loading="lazy"  
+                        alt="Console Light" />
                     </a>
 
                 </div>
@@ -145,7 +174,12 @@
                 <div class="gallery-item">
 
                     <a href="asset/videos/DoorMaking.mp4" class="glightbox" data-type="video">
-                        <video src="asset/videos/DoorMaking.mp4" muted autoplay loop playsinline preload="none"></video>
+                        <video 
+                            src="asset/videos/DoorMaking.mp4" 
+                            muted loop playsinline preload="none"
+                            onmouseenter="this.play()" 
+                            onmouseleave="this.pause()">
+                        </video>
                     </a>
 
                 </div>
@@ -153,7 +187,15 @@
                 <div class="gallery-item">
 
                     <a href="asset/images/CreamKitchen.webp" class="glightbox">
-                        <img src="asset/images/CreamKitchen.webp" loading="lazy" alt="Kitchen furniture" />
+                        <img 
+                        src="asset/images/CreamKitchen.webp" 
+                        srcset ="
+                        asset/images/CreamKitchen-small.webp 624w,
+                        asset/images/CreamKitchen.webp 1440w
+                        "
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        loading="lazy" 
+                        alt="Kitchen furniture" />
                     </a>
 
                 </div>
@@ -161,7 +203,12 @@
                 <div class="gallery-item">
 
                     <a href="asset/videos/Wardrobe.mp4" class="glightbox" data-type="video">
-                        <video src="asset/videos/Wardrobe.mp4" muted autoplay loop playsinline preload="none"></video>
+                        <video 
+                            src="asset/videos/Wardrobe.mp4" 
+                            muted loop playsinline preload="none" 
+                            onmouseenter="this.play()" 
+                            onmouseleave="this.pause()">
+                        </video>
                     </a>
 
                 </div>
@@ -169,7 +216,15 @@
                 <div class="gallery-item">
 
                     <a href="asset/images/openRoofKitchenCabinet.webp" class="glightbox">
-                        <img src="asset/images/openRoofKitchenCabinet.webp" loading="lazy" alt="Open roof kitchen cabinet" />
+                        <img 
+                        src="asset/images/openRoofKitchenCabinet.webp" 
+                        srcset ="
+                        asset/images/openRoofKitchenCabinet-small.webp 624w,
+                        asset/images/openRoofKitchenCabinet.webp 1440w
+                        "
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        loading="lazy" 
+                        alt="Open roof kitchen cabinet" />
                     </a>
 
                 </div>
@@ -177,7 +232,12 @@
                 <div class="gallery-item">
 
                     <a href="asset/videos/kitchen.mp4" class="glightbox" data-type="video">
-                        <video src="asset/videos/kitchen.mp4" muted autoplay loop playsinline preload="none"></video>
+                        <video 
+                            src="asset/videos/kitchen.mp4" 
+                            muted loop playsinline preload="none" 
+                            onmouseenter="this.play()" 
+                            onmouseleave="this.pause()">
+                        </video>
                     </a>
 
                 </div>
@@ -185,7 +245,15 @@
                 <div class="gallery-item">
 
                     <a href="asset/images/console+tv.webp" class="glightbox">
-                        <img src="asset/images/console+tv.webp" loading="lazy" alt="TV console" />
+                        <img 
+                        src="asset/images/console+tv.webp" 
+                        srcset ="
+                        asset/images/console+tv-small.webp 624w,
+                        asset/images/console+tv.webp 1440w
+                        "
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        loading="lazy" 
+                        alt="TV console" />
                     </a>
 
                 </div>
@@ -193,7 +261,12 @@
                 <div class="gallery-item">
 
                     <a href="asset/videos/FixingConsole.mp4" class="glightbox" data-type="video">
-                        <video src="asset/videos/FixingConsole.mp4" muted autoplay loop playsinline preload="none"></video>
+                        <video 
+                            src="asset/videos/FixingConsole.mp4" 
+                            muted loop playsinline preload="none" 
+                            onmouseenter="this.play()" 
+                            onmouseleave="this.pause()">
+                        </video>
                     </a>
 
                 </div>
@@ -201,7 +274,15 @@
                 <div class="gallery-item">
 
                     <a href="asset/images/hero-bg2.webp" class="glightbox">
-                        <img src="asset/images/hero-bg2.webp" loading="lazy" alt="Dining furniture" />
+                        <img 
+                        src="asset/images/hero-bg2.webp" 
+                        srcset ="
+                        asset/images/hero-bg2-small.webp 624w,
+                        asset/images/hero-bg2.webp 1440w
+                        "
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        loading="lazy" 
+                        alt="Dining furniture" />
                     </a>
 
                 </div>
@@ -209,7 +290,12 @@
                 <div class="gallery-item">
 
                     <a href="asset/videos/Console+Shelf.mp4" class="glightbox" data-type="video">
-                        <video src="asset/videos/Console+Shelf.mp4" muted autoplay loop playsinline preload="none"></video>
+                        <video 
+                            src="asset/videos/Console+Shelf.mp4" 
+                            muted loop playsinline preload="none" 
+                            onmouseenter="this.play()" 
+                            onmouseleave="this.pause()">
+                        </video>
                     </a>
 
                 </div>
@@ -217,7 +303,14 @@
                 <div class="gallery-item">
 
                     <a href="asset/images/hero-bg4.webp" class="glightbox">
-                        <img src="asset/images/hero-bg4.webp" loading="lazy" alt="Bedroom bed frame" />
+                        <img 
+                        src="asset/images/hero-bg4.webp"
+                        srcset ="
+                        asset/images/hero-bg4-small.webp 624w,
+                        asset/images/hero-bg4.webp 1440w
+                        "
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        loading="lazy" alt="Bedroom bed frame" />
                     </a>
 
                 </div>
@@ -225,7 +318,12 @@
                 <div class="gallery-item">
 
                     <a href="asset/videos/Wardrobe.mp4" class="glightbox" data-type="video">
-                        <video src="asset/videos/Wardrobe.mp4" muted autoplay loop playsinline preload="none"></video>
+                        <video 
+                            src="asset/videos/Wardrobe.mp4" 
+                            muted loop playsinline preload="none" 
+                            onmouseenter="this.play()" 
+                            onmouseleave="this.pause()">
+                        </video>
                     </a>
 
                 </div>
@@ -233,7 +331,14 @@
                 <div class="gallery-item">
 
                     <a href="asset/images/hero-bg3.webp" class="glightbox">
-                        <img src="asset/images/hero-bg3.webp" loading="lazy" alt="Living room cabinet" />
+                        <img 
+                        src="asset/images/hero-bg3.webp" 
+                        srcset ="
+                        asset/images/hero-bg3-small.webp 624w,
+                        asset/images/hero-bg3.webp 1440w
+                        "
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        loading="lazy" alt="Living room cabinet" />
                     </a>
 
                 </div>
@@ -241,7 +346,12 @@
                 <div class="gallery-item">
 
                     <a href="asset/videos/FullKitchenCabinet.mp4" class="glightbox" data-type="video">
-                        <video src="asset/videos/FullKitchenCabinet.mp4" muted autoplay loop playsinline preload="none"></video>
+                        <video 
+                            src="asset/videos/FullKitchenCabinet.mp4" 
+                            muted loop playsinline preload="none" 
+                            onmouseenter="this.play()" 
+                            onmouseleave="this.pause()">
+                        </video>
                     </a>
 
                 </div>
@@ -249,7 +359,14 @@
                 <div class="gallery-item">
 
                     <a href="asset/images/hero-bg.webp" class="glightbox">
-                        <img src="asset/images/hero-bg.webp" loading="lazy" alt="Living room" />
+                        <img 
+                        src="asset/images/hero-bg.webp" 
+                        srcset ="
+                        asset/images/hero-bg-small.webp 624w,
+                        asset/images/hero-bg.webp 1440w
+                        "
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        loading="lazy" alt="Living room" />
                     </a>
 
                 </div>
@@ -257,7 +374,12 @@
                 <div class="gallery-item">
 
                     <a href="asset/videos/TvConsoleMakeOver.mp4" class="glightbox" data-type="video">
-                        <video src="asset/videos/TvConsoleMakeOver.mp4" muted autoplay loop playsinline preload="none"></video>
+                        <video 
+                            src="asset/videos/TvConsoleMakeOver.mp4" 
+                            muted loop playsinline preload="none" 
+                            onmouseenter="this.play()" 
+                            onmouseleave="this.pause()">
+                        </video>
                     </a>
 
                 </div>
@@ -265,7 +387,12 @@
                 <div class="gallery-item">
 
                     <a href="asset/videos/PassageWardrobe.mp4" class="glightbox" data-type="video">
-                        <video src="asset/videos/PassageWardrobe.mp4" muted autoplay loop playsinline preload="none"></video>
+                        <video 
+                            src="asset/videos/PassageWardrobe.mp4" 
+                            muted loop playsinline preload="none" 
+                            onmouseenter="this.play()" 
+                            onmouseleave="this.pause()">
+                        </video>
                     </a>
 
                 </div>
@@ -273,7 +400,12 @@
                 <div class="gallery-item">
 
                     <a href="asset/videos/Dinning.mp4" class="glightbox" data-type="video">
-                        <video src="asset/videos/Dinning.mp4" muted autoplay loop playsinline preload="none"></video>
+                        <video 
+                            src="asset/videos/Dinning.mp4" 
+                            muted loop playsinline preload="none" 
+                            onmouseenter="this.play()" 
+                            onmouseleave="this.pause()">
+                        </video>
                     </a>
 
                 </div>
@@ -281,7 +413,12 @@
                 <div class="gallery-item">
 
                     <a href="asset/videos/LightKitchenCabinet.mp4" class="glightbox" data-type="video">
-                        <video src="asset/videos/LightKitchenCabinet.mp4" muted autoplay loop playsinline preload="none"></video>
+                        <video 
+                            src="asset/videos/LightKitchenCabinet.mp4" 
+                            muted loop playsinline preload="none" 
+                            onmouseenter="this.play()" 
+                            onmouseleave="this.pause()">
+                        </video>
                     </a>
 
                 </div>
@@ -289,7 +426,12 @@
                 <div class="gallery-item">
 
                     <a href="asset/videos/SofaMaking.mp4" class="glightbox" data-type="video">
-                        <video src="asset/videos/SofaMaking.mp4" muted autoplay loop playsinline preload="none"></video>
+                        <video 
+                            src="asset/videos/SofaMaking.mp4" 
+                            muted loop playsinline preload="none" 
+                            onmouseenter="this.play()" 
+                            onmouseleave="this.pause()">
+                        </video>
                     </a>
 
                 </div>
@@ -689,7 +831,12 @@
                 <div class="footer-brand">
 
                     <a href="#home" class="footer-logo">
-                        <img src="asset/images/sleaq-removebg-preview.png" alt="Sleaq Furniture Logo" class="footer-logo-img" />
+                        <img 
+                        src="asset/images/sleaq-removebg-preview.webp" 
+                        alt="Sleaq Furniture Logo"
+                        class="footer-logo-img"
+                        width="142"
+                        height="70" />
                     </a>
                     
                     <p class="footer-tagline">Crafting Spaces, Creating Memories</p>
