@@ -426,6 +426,67 @@ nav .nav-btn {
   max-width: 120px;                    /* prevents long labels from stretching too wide */
 }
 
+.cac-badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1.2rem 1.5rem;
+  background: rgba(232, 119, 34, 0.06);   /* very light orange tint */
+  border: 1.5px solid rgba(232, 119, 34, 0.2);
+  border-radius: 10px;
+}
+
+.cac-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cac-info i {
+  font-size: 2rem;
+  color: var(--orangeAccent);
+  flex-shrink: 0;
+}
+
+.cac-text {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+
+.cac-title {
+  font-weight: 700;
+  font-size: .95rem;
+  color: var(--brownPrimary);
+}
+
+.cac-number {
+  font-size: .8rem;
+  color: var(--WarmNeutral);
+}
+
+.cac-view {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--orangeAccent);
+  text-decoration: none;
+  border: 1.5px solid var(--orangeAccent);
+  padding: .5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.cac-view:hover {
+  background: var(--orangeAccent);
+  color: #fff;
+}
+
 /* Testimonials Section */
 .testimonials {
   padding: 6rem 5%;
@@ -666,6 +727,8 @@ nav .nav-btn {
   transform: translateY(-2px);
 }
 
+
+
 /* ---- Email Form ---- */
 .contact-form {
   display: flex;
@@ -727,6 +790,41 @@ nav .nav-btn {
   background: var(--brownPrimary);
   border: 2px solid var(--orangeAccent);
   transform: translateY(-2px);
+}
+
+.map-wrapper {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.map-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  color: var(--brownPrimary);
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.map-address {
+  font-size: .95rem;
+  color: var(--WarmNeutral);
+}
+
+.map-container {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #E8DDD0;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* footer */
