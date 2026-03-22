@@ -978,6 +978,9 @@ nav .nav-btn {
    width: 100%;
    
   }
+   .hero-slides .slide:first-child {
+    background-image: url('asset/images/hero-bg.webp') !important;
+  }
 
   /* NAVBAR */
   .navbar {
