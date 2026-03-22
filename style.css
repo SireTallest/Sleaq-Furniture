@@ -1,14 +1,9 @@
-/* Base / Reset */
 :root{
   --brownPrimary:#5C3317;       
   --orangeAccent:#E87722;     /* button */
   --WarmNeutral:#8B5E3C;
   --bg:#FAF7F2;
   --TextDark:#2C1A0E;
-  /* --shadow: 0 6px 20px rgba(20,32,79,0.08);
-  --radius:10px;
-  --container:1200px;
-  --gap:1.25rem; */
 }
 *, *::before, *::after {
   box-sizing: border-box;
@@ -45,11 +40,8 @@ body{
   height: 50px;      
   width: auto;       
   object-fit: contain;
-  /* mix-blend-mode: multiply; */
   color:#fff; 
   font-weight:700;
-  /* filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.9));  */
-  /* filter: brightness(1.2) drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.7)); */
   filter: brightness(1.2) invert(0);
 }
 
@@ -97,7 +89,6 @@ nav .nav-btn {
   cursor: pointer;
   font-family: "DM Sans", sans-serif;
   text-align: center;
-  /* display: inline-block; */
 }
 
 .nav-btn:hover {
@@ -174,41 +165,10 @@ nav .nav-btn {
   opacity: 1;        
 }
 
-/* .scroll-indicator {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: .5rem;
-  color: #fff;
-  font-size: .75rem;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  opacity: 0.8;
-}
-
-.scroll-line {
-  width: 1px;
-  height: 50px;
-  background: var(--orangeAccent);
-  animation: scrollPulse 1.8s ease-in-out infinite;
-  transform-origin: top;
-} */
-
-/* @keyframes scrollPulse {
-  0%   { transform: scaleY(0); opacity: 0; }
-  50%  { transform: scaleY(1); opacity: 1; }
-  100% { transform: scaleY(0); opacity: 0; }
-} */
-
 .hero-actions {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;   /* wraps to next line on small screens */
+  flex-wrap: wrap;   
 }
 
 .btn-primary {
@@ -219,7 +179,7 @@ nav .nav-btn {
   font-weight: 600;
   text-decoration: none;
   transition: background 0.3s ease, transform 0.2s ease;
-  display: inline-block;   /* needed for padding to work on <a> tags */
+  display: inline-block;   
 }
 
 .btn-primary:hover {
@@ -263,7 +223,7 @@ nav .nav-btn {
   letter-spacing: .2em;
   text-transform: uppercase;
   font-weight: 500;
-  display: block;         /* spans are inline by default — block gives it its own line */
+  display: block;        
   margin-bottom: .5rem;
 }
 
@@ -278,13 +238,13 @@ nav .nav-btn {
   color: var(--WarmNeutral);
   font-size: 1rem;
   max-width: 550px;
-  margin: 0 auto;        /* centers the paragraph */
+  margin: 0 auto;        
   line-height: 1.7;
 }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);   /* 3 equal columns */
+  grid-template-columns: repeat(3, 1fr);  
   gap: 1.2rem;
 }
 
@@ -323,7 +283,7 @@ nav .nav-btn {
 }
 
 .gallery-item.hidden {
-  display: none;       /* hides items beyond the initial count */
+  display: none;       
 }
 
 .load-more-wrapper {
@@ -363,7 +323,7 @@ nav .nav-btn {
 .about-image {
   border-radius: 12px;
   overflow: hidden;
-  height: 550px;                 /* tall image feels editorial */
+  height: 550px;                 
 }
 
 .about-image img {
@@ -434,7 +394,7 @@ nav .nav-btn {
   gap: 1rem;
   margin-top: 2rem;
   padding: 1.2rem 1.5rem;
-  background: rgba(232, 119, 34, 0.06);   /* very light orange tint */
+  background: rgba(232, 119, 34, 0.06);  
   border: 1.5px solid rgba(232, 119, 34, 0.2);
   border-radius: 10px;
 }
@@ -602,7 +562,7 @@ nav .nav-btn {
 
 .contact-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1.4fr;  /* form slightly wider than info */
+  grid-template-columns: 1fr 1.4fr;  
   gap: 4rem;
   margin-top: 3rem;
   align-items: start;
@@ -661,7 +621,7 @@ nav .nav-btn {
 .social-link {
   width: 44px;
   height: 44px;
-  border-radius: 50%;           /* circle shape */
+  border-radius: 50%;           
   display: flex;
   align-items: center;
   justify-content: center;
@@ -680,7 +640,7 @@ nav .nav-btn {
 }
 
 .social-link.youtube {
-  background: #ff0000;   /* red tint for YouTube */
+  background: #ff0000;   
   color: #ffff;
 }
 
@@ -693,24 +653,11 @@ nav .nav-btn {
 }
 
 
-
-.social-link.tiktok:hover {
-  /* background: #000;
-  color: #fff; */
-  /* transform: translateY(-3px); */
-}
-
-.social-link.youtube:hover {
-  /* background: #FF0000;
-  color: #fff; */
-  /* transform: translateY(-3px); */
-}
-
 .btn-whatsapp {
   display: inline-flex;
   align-items: center;
   gap: .6rem;
-  background: #25D366;          /* WhatsApp green — universally recognized */
+  background: #25D366;         
   color: #fff;
   padding: .9rem 2rem;
   border-radius: 8px;
@@ -829,7 +776,7 @@ nav .nav-btn {
 
 /* footer */
 .footer {
-  background: var(--brownPrimary);    /* deep brown — #5C3317 */
+  background: var(--brownPrimary);   
   padding: 3rem 5%;
 }
 
@@ -855,7 +802,7 @@ nav .nav-btn {
 
 .footer-tagline {
   font-size: .9rem;
-  color: rgba(255, 255, 255, 0.6);   /* dimmed white — subtle */
+  color: rgba(255, 255, 255, 0.6);  
   font-style: italic;
   margin-top: .5rem;
   letter-spacing: .05em;
@@ -863,10 +810,10 @@ nav .nav-btn {
 
 .footer-copy {
   font-size: .8rem;
-  color: white;   /* even more dimmed — least important info */
+  color: white;   
   letter-spacing: .05em;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);  /* very subtle divider */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);  
   width: 100%;
   text-align: center;
   font-weight: 600;
@@ -913,7 +860,6 @@ nav .nav-btn {
   font-size: 1.1rem;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
-  /* background: rgba(255, 255, 255, 0.08); */
   transition: all 0.3s ease;
 }
 
@@ -930,8 +876,8 @@ nav .nav-btn {
 .testimonials,
 .contact,
 .footer-content {
-  max-width: 1400px;      /* content never stretches beyond this */
-  margin-left: auto;      /* centers the content */
+  max-width: 1400px;      
+  margin-left: auto;     
   margin-right: auto;
 }
 
@@ -944,16 +890,11 @@ nav .nav-btn {
 }
 
 
-/* ============================================
-   RESPONSIVENESS
-   ============================================ */
+/* RESPONSIVENESS */
 
 /* ---- TABLET (769px - 1024px) ---- */
 @media (min-width: 769px) and (max-width: 1025px) {
 
-  /* .hero-content{
-    padding-left:120px 5% 60px;
-  } */
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1029,8 +970,8 @@ nav .nav-btn {
 @media (max-width: 768px) {
 
   .hero {
-    padding-left: 120px 5% 60px;    /* matches your navbar padding */
-    text-align: left;    /* remove center alignment */
+    padding-left: 120px 5% 60px;    
+    text-align: left;    
  }
 
  .hero-content{
@@ -1241,7 +1182,6 @@ nav .nav-btn {
     flex-wrap: wrap;
     font-size: .72rem;
     width: auto;
-    /* margin-top: rem; */
     display: flex;
     align-items: center;
     justify-content: center;
